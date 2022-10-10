@@ -1,0 +1,273 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+/* UTILITIES */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.float-left {
+    float: left;
+}
+
+
+/* TYPOGRAPHY*/
+
+h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* MAIN HEADER */
+
+.mainheader {
+    height: 600px;
+    background-color: dodgerblue;
+    background-image: url(images/grafico.png);
+    background-repeat: no-repeat;
+    background-position: 103% 106%;
+}
+
+.header-nav {
+    height: 80px;
+    font-size: 80%;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.header-nav .header-logo,
+.header-nav .header-nav-center,
+.header-nav .header-nav-right {
+    float: left;
+}
+
+.header-nav .header-logo {
+    width: 30%;
+    margin-top: 3px;
+}
+
+.header-nav .header-nav-center {
+    width: 40%;
+}
+
+.header-nav .header-nav-right {
+    width: 30%;
+    text-align: right;
+}
+
+.header-nav .header-logo img {
+    width: 200px;
+    height: 90px;
+    line-height: 80px;
+}
+
+/* STILE MENU */
+.menu-inline {
+    list-style: none;
+}
+
+.menu-inline li {
+    display: inline-block;
+    padding: 0, 10px;
+    margin-right: 15px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav a:hover {
+    color: rgb(189, 189, 189);
+
+}
+
+/* STILE BOTTONI */
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid white;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.btn-green {
+    background-color: rgb(130, 214, 4);
+    border: 0;
+    
+}
+
+.btn-large {
+    padding: 20px;
+}
+
+.btn-white {
+    color: white;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    position: relative;
+    height: 480px;
+}
+
+.jumbotron-text {
+    position: absolute;
+    top: 50%;
+    left:0%;
+    transform: translateY(-50%);
+}
+
+.jumbotron-text h1 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 50px;
+
+}
+
+/* MAIN STYLE */
+
+/* SEZIONE EFFICIENCY */
+#efficiency {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(195, 195, 195);
+}
+
+#efficiency p {
+    font-size: 16px;
+}
+
+/* SEZIONE INFO */
+
+#info {
+    margin: 0 1%; 
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey ;
+
+}
+
+.col-3 {
+    float: left;
+    width: calc(100% / 3);
+   
+    
+}
+
+.col-3 img {
+    margin-bottom: 20px;
+    
+}
+
+.info-data-heading {
+    position: relative;
+    margin-bottom: 15px;
+    color: darkgoldenrod;
+    padding-bottom: 20px;
+}
+
+.info-data-heading::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 1px;
+    background-color: grey;
+    transform: translateX(-50%);
+}
+
+.col-3 p {
+    color: rgb(72, 72, 72);
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* PLAN */
+
+#plan {
+   width: 70%;
+   margin: 0 auto; 
+   padding: 40px;
+}
+
+#info-servizi h2 {
+    color: dodgerblue;
+    margin-bottom: 30px;
+}
+
+#text-servizi p {
+    font-size: 18px;
+    padding: 40px;
+}
+
+/* STILE FOOTER */ 
+
+footer {
+    position: relative;
+    background-color: dodgerblue;
+    height: 170px;
+    display: block;
+}
+
+footer h2 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.general-footer-structureplan {
+    width: 50%;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.general-footer-select {
+    width: 30%;
+    height: 170px;
+
+}
+
+.general-footer-select h4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.general-footer-button {
+    width: 20%;
+    height: 170px;
+}
+
+/* HELP BUTTON */
